@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>YOON PARK</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400" rel="stylesheet">
+	</head>
+	<body class="landing is-preload">
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+				
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html"><img class="gear" src="assets/css/images/name.svg"></a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Works</a></li>
+											<li><a href="elements.html">About</a></li>
+											<li><a href="#">Resume</a></li>
+											<li><a href="#">Contact</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2 class="addstrokeonly">Camellia</h2>
+							<p>Interactive Film [2018]</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+                                <h3>UCLA DMA INTERACTIVITY</h3>
+                                <h4 style="font-weight: lighter">
+                                    CAMELLIA: <span style="text-transform:lowercase"><i>"My destiny is in your hands"</i></span>
+                                </h4>
+                                <br>
+
+								<p>
+                                        A unique narrative about the two figures is unraveled through an interactive film influenced by the user. Will the gap widen or close? Camellia questions the human ability to choose and make decisions, the power to change the course of the future. 
+                                </p>              
+                                <p>
+                                        Camellia combines antique mood of an old film while incorporating interactive elements that guides the users to unravel the story. The users have complete control of the choices they make in this nonlinear exploration film to parallel the choices that the two character makes in their relationship.
+                                </p>
+
+                                <p><a class="hover-link" href="https://www.openprocessing.org/sketch/561264" target="_blank">//Go to Camellia on Open Processing</a></p>
+
+								
+							</div>
+						</section>
+					</article>
+
+                    <section id="two" class="wrapper alt style2">
+                            
+
+                            <section class="spotlight1"><div class="image"><img src="camellia/img/film-storyboard.jpg" alt="" /></div> </section>
+                            <section class="spotlight1"><div class="image"><img src="camellia/img/film-01.png" alt="" /></div> </section>
+                            <section class="spotlight1"><div class="image"><img src="camellia/img/film-02.png" alt="" /></div></section>
+                            <section class="spotlight1"><div class="image"><img src="camellia/img/film-03.png" alt="" /></div></section>
+                            <section class="spotlight1"><div class="image"><img src="camellia/img/film-04.png" alt="" /></div></section>
+                            <section class="spotlight1"><div class="image"><img src="camellia/img/film-05.png" alt="" /></div></section>
+                            <section class="spotlight1"><div class="image"><img src="camellia/img/film-06.png" alt="" /></div></section>
+                            <section class="spotlight1"><div class="image"><img src="camellia/img/film-07.png" alt="" /></div></section>
+                    </section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            
+            <script type="text/javascript">
+				$(function() {
+					var rotation = 0, 
+						scrollLoc = $(document).scrollTop();
+					$(window).scroll(function() {
+						var newLoc = $(document).scrollTop();
+						var diff = scrollLoc - newLoc;
+						rotation += diff, scrollLoc = newLoc;
+						var rotationStr = "rotate(" + rotation + "deg)";
+						$(".gear").css({
+						"-webkit-transform": rotationStr,
+						"-moz-transform": rotationStr,
+						"transform": rotationStr
+						});
+					});
+				});
+
+                $(function topFunction() {
+                    document.body.scrollTop = 0; 
+                    document.documentElement.scrollTop = 0;
+                });
+            </script>
+            
+
+	</body>
+</html>

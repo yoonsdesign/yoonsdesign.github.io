@@ -147,7 +147,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		border-bottom: dotted 1px;
+		/*border-bottom: dotted 1px;*/
 		color: inherit;
 		text-decoration: none;
 	}
@@ -169,7 +169,7 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 		font-size: 15px;
 		font-family: 'Montserrat',sans-serif;
-		font-weight: 500;
+		font-weight: normal;
 		color: #FD8324;
 	}
 
@@ -194,9 +194,6 @@ input, select, textarea {
 		font-size: 30px;
 		line-height: 30px;
 		color:none;
-	}
-	.addstrokeonly{
-		color:#ff8300;
 	}
 
 	
@@ -1785,6 +1782,8 @@ input, select, textarea {
 		text-align: center;
 		height: 100%;
 	}
+	
+	
 
 	header p {
 		color: rgba(, , , 0.5);
@@ -2099,16 +2098,17 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 3px;
+		
 		border: 0;
 		display: inline-block;
 		position: relative;
+		margin: 0 auto;
 		-webkit-filter: drop-shadow(5px 5px 5px #d8d8d8);
   		filter: drop-shadow(5px 5px 5px #d8d8d8);
 	}
 
 		.image img {
-			border-radius: 3px;
+			
 			display: block;
 			padding-left:10px;
 		}
@@ -2699,8 +2699,44 @@ input, select, textarea {
 			overflow:hidden;
 			width:800px;
 		}
-
+		
 			.spotlight .image img {
+				/*
+				border-radius: 0;
+				width: 100%;*/
+				flex-shrink:10;
+				width:100%;
+				overflow:hidden;
+			}
+		.spotlight1 {
+				-moz-align-items: top;
+				-webkit-align-items: top;
+				-ms-align-items: top;
+				align-items: top;
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				padding-bottom: 80px;
+				
+			}
+			.spotlight1 .image {
+			-moz-order: 1;
+			-webkit-order: 1;
+			-ms-order: 1;
+			order: 1;
+			/*border-radius: 0;
+			width: 40%;
+			padding: none;*/
+			display:flex;
+			justify-content: center;
+			align-items:center;
+			overflow:hidden;
+			width:1000px;
+		}
+
+		
+			.spotlight1 .image img {
 				/*
 				border-radius: 0;
 				width: 100%;*/
@@ -2720,6 +2756,7 @@ input, select, textarea {
 			max-width: 48em;
 			width: 60%;
 		}
+
 	
 
 
@@ -2733,39 +2770,30 @@ input, select, textarea {
 		/*.spotlight:nth-child(1) {
 			background-color: rgba(0, 0, 0, 0.075);
 		}
-
 		.spotlight:nth-child(2) {
 			background-color: rgba(0, 0, 0, 0.15);
 		}
-
 		.spotlight:nth-child(3) {
 			background-color: rgba(0, 0, 0, 0.225);
 		}
-
 		.spotlight:nth-child(4) {
 			background-color: rgba(0, 0, 0, 0.3);
 		}
-
 		.spotlight:nth-child(5) {
 			background-color: rgba(0, 0, 0, 0.375);
 		}
-
 		.spotlight:nth-child(6) {
 			background-color: rgba(0, 0, 0, 0.45);
 		}
-
 		.spotlight:nth-child(7) {
 			background-color: rgba(0, 0, 0, 0.525);
 		}
-
 		.spotlight:nth-child(8) {
 			background-color: rgba(0, 0, 0, 0.6);
 		}
-
 		.spotlight:nth-child(9) {
 			background-color: rgba(0, 0, 0, 0.675);
 		}
-
 		.spotlight:nth-child(10) {
 			background-color: rgba(0, 0, 0, 0.75);
 		}*/
@@ -2774,6 +2802,10 @@ input, select, textarea {
 
 			.spotlight .image {
 				width: 70%;
+			}
+
+			.spotlight .image1{
+				width:90%;
 			}
 
 			.spotlight .content {
@@ -2978,7 +3010,7 @@ input, select, textarea {
 			.wrapper.style1 input[type="button"],
 			.wrapper.style1 button,
 			.wrapper.style1 .button {
-				box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
+				box-shadow: inset 0 0 0 0px rgba(0, 0, 0, 0.125);
 				color: #ffffff;
 			}
 
@@ -3008,6 +3040,7 @@ input, select, textarea {
 
 		.wrapper.style2 {
 			background-color: white;
+			
 		}
 
 		.wrapper.style3 {
@@ -3183,7 +3216,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style5 h2, .wrapper.style5 h3, .wrapper.style5 h4, .wrapper.style5 h5, .wrapper.style5 h6 {
-				color: #dbdbdb;
+				color: #FD8324;
 			}
 
 			.wrapper.style5 hr {
@@ -3597,7 +3630,7 @@ input, select, textarea {
 /*YOON PARK HEADER APPEAR*/
 			#header.alt h1 {
 				padding-top: 15px;
-				pointer-events: none;
+				/*pointer-events: none;*/
 				opacity: 1;
 			}
 
@@ -3878,7 +3911,7 @@ input, select, textarea {
 		}
 
 		#main > header p {
-			color: inherit;
+			color: #FD8324;
 			letter-spacing: 0.225em;
 			text-transform: uppercase;
 			top: 0;
@@ -4067,4 +4100,13 @@ input, select, textarea {
 	cursor:pointer;
 }
 
-
+.hover-link:hover{
+	text-decoration:underline;
+	font-weight:bolder;
+}
+.hover-link:visited{
+	text-decoration:none;
+}
+.normal{
+	font-weight:normal;
+}
