@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>YOON PARK</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<link href='simplelightbox-master/dist/simplelightbox-works.css' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400" rel="stylesheet">
+	</head>
+	<body class="landing is-preload">
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+				
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html"><img class="gear" src="assets/css/images/name.svg"></a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="works.html">Works</a></li>
+											<li><a href="about.html">About</a></li>
+											<li><a href="resume.html">Resume</a></li>
+											
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2 class="addstrokeonly">Works</h2>
+							<!--<p>One Poster a Week [2019]</p>-->
+						</header>
+	
+					</article>
+					<!--POSTER INPUTS-->
+                    <section class="container">
+						<div class="gallery1">
+							
+
+							
+							<a href="bloop.html"><img src="bloop/bloop-thumbnail.png" class="big"></a>
+							<a href="perf.html"><img src="perf/perf-thumbnail.jpg" class="big"></a>
+							<a href="olive.html"><img src="olive/olive-thumbnail.jpg" class="big"></a>
+							<a href="typography.html"><img src="typography/typ-thumbnail.jpg" class="big"></a>
+							
+							
+							<!--
+							<a href="posters/poster-04.jpg"><img src="posters/poster-04.jpg" class="big"></a>
+							<a href="posters/poster-05.jpg"><img src="posters/poster-05.jpg" class="big"></a>
+							<a href="posters/poster-06.jpg"><img src="posters/poster-06.jpg" class="big"></a>
+							<a href="posters/poster-07.jpg"><img src="posters/poster-07.jpg" class="big"></a>
+							<a href="posters/poster-08.jpg"><img src="posters/poster-08.jpg" class="big"></a>
+							<a href="posters/poster-09.jpg"><img src="posters/poster-09.jpg" class="big"></a>
+							<a href="posters/poster-10.jpg"><img src="posters/poster-10.jpg" class="big"></a>
+							<a href="posters/poster-11.jpg"><img src="posters/poster-11.jpg" class="big"></a>
+							<a href="posters/poster-12.jpg"><img src="posters/poster-12.jpg" class="big"></a>
+
+							-->
+							<div class="clear"></div>
+						</div>
+						</div>
+                    </section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+			
+			<!--SCROLL NAME-->
+            <script type="text/javascript">
+				$(function() {
+					var rotation = 0, 
+						scrollLoc = $(document).scrollTop();
+					$(window).scroll(function() {
+						var newLoc = $(document).scrollTop();
+						var diff = scrollLoc - newLoc;
+						rotation += diff, scrollLoc = newLoc;
+						var rotationStr = "rotate(" + rotation + "deg)";
+						$(".gear").css({
+						"-webkit-transform": rotationStr,
+						"-moz-transform": rotationStr,
+						"transform": rotationStr
+						});
+					});
+				});
+
+                $(function topFunction() {
+                    document.body.scrollTop = 0; 
+                    document.documentElement.scrollTop = 0;
+                });
+			</script>
+			
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+			<script type="text/javascript" src="simplelightbox-master/dist/simple-lightbox.js"></script>
+			<script>
+				$(function(){
+					var $gallery = $('.gallery a').simpleLightbox();
+
+					$gallery.on('show.simplelightbox', function(){
+						console.log('Requested for showing');
+					})
+					.on('shown.simplelightbox', function(){
+						console.log('Shown');
+					})
+					.on('close.simplelightbox', function(){
+						console.log('Requested for closing');
+					})
+					.on('closed.simplelightbox', function(){
+						console.log('Closed');
+					})
+					.on('change.simplelightbox', function(){
+						console.log('Requested for change');
+					})
+					.on('next.simplelightbox', function(){
+						console.log('Requested for next');
+					})
+					.on('prev.simplelightbox', function(){
+						console.log('Requested for prev');
+					})
+					.on('nextImageLoaded.simplelightbox', function(){
+						console.log('Next image loaded');
+					})
+					.on('prevImageLoaded.simplelightbox', function(){
+						console.log('Prev image loaded');
+					})
+					.on('changed.simplelightbox', function(){
+						console.log('Image changed');
+					})
+					.on('nextDone.simplelightbox', function(){
+						console.log('Image changed to next');
+					})
+					.on('prevDone.simplelightbox', function(){
+						console.log('Image changed to prev');
+					})
+					.on('error.simplelightbox', function(e){
+						console.log('No image found, go to the next/prev');
+						console.log(e);
+					});
+				});
+			</script>
+            
+
+	</body>
+</html>

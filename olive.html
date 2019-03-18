@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>YOON PARK</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400" rel="stylesheet">
+	</head>
+	<body class="landing is-preload">
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+				
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html"><img class="gear" src="assets/css/images/name.svg"></a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="works.html">Works</a></li>
+											<li><a href="about.html">About</a></li>
+											<li><a href="resume.html">Resume</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2 class="addstrokeonly">Olive</h2>
+							<p>Freelance Brand Design [2018]</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+                                <h3>Rebranding of Olive Italian Bistro</h3>
+                          
+                                <br>
+
+								<p>
+									<u>IDENTIFYING THE PROBLEM:</u>
+									<br>
+									 The previous Olive restaurant's brand image and value was significantly low compared to the quality of the food. The design of the menu was lacking hierarchy making it hard for customers to read and their sales were low from ineffective advertisement. 
+									 <br><br>
+
+									 <u>COMPONENTS OF REBRANDING:</u> 
+									<br>Logo 
+									<br>Takeout Menu 
+									<br>Catering Menu 
+
+									<br><br>
+									<u>VISION:</u>
+									<br>
+									Essentially establish a brand identity that stands on simplicity, elegance, and representation of restaurant atmosphere 
+									 <br><br>
+
+                                </p>              
+                                <p style=font-size:12px>
+                                    Instructor: Casey Reas || Teaching Assistant: Alice Chung
+                                </p>
+
+                               
+
+								
+							</div>
+						</section>
+					</article>
+
+                    <section id="two" class="wrapper alt style2">
+						
+							
+							
+							<section class="spotlight1"><div class="image"><img src="olive/olive-1.jpg" alt="" /></div> </section>
+							<section class="spotlight1"><div class="image"><img src="olive/olive-2.jpg" alt="" /></div> </section>
+							<section class="spotlight1"><div class="image"><img src="olive/olive-3.jpg" alt="" /></div> </section>
+							<section class="spotlight1"><div class="image"><img src="olive/olive-front.jpg" alt="" /></div> </section>
+							<section class="spotlight1"><div class="image"><img src="olive/olive-back.jpg" alt="" /></div> </section>
+							<section class="spotlight1"><div class="image"><img src="olive/olive-process.jpg" alt="" /></div> </section>
+                            
+                            
+							</div></section>
+                    </section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            
+            <script type="text/javascript">
+				$(function() {
+					var rotation = 0, 
+						scrollLoc = $(document).scrollTop();
+					$(window).scroll(function() {
+						var newLoc = $(document).scrollTop();
+						var diff = scrollLoc - newLoc;
+						rotation += diff, scrollLoc = newLoc;
+						var rotationStr = "rotate(" + rotation + "deg)";
+						$(".gear").css({
+						"-webkit-transform": rotationStr,
+						"-moz-transform": rotationStr,
+						"transform": rotationStr
+						});
+					});
+				});
+
+                $(function topFunction() {
+                    document.body.scrollTop = 0; 
+                    document.documentElement.scrollTop = 0;
+                });
+            </script>
+            
+
+	</body>
+</html>

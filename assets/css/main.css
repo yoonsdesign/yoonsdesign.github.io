@@ -4215,7 +4215,36 @@ image4
   /* line 65, ../sass/demo.scss */
   .align-center {
 	text-align: center;
+	}
+	
+	/* WORKS IMAGE CSS*/
+  .container .gallery1 a img {
+	float: left;
+	width: 33%;
+	height: auto;
+	border: 1px solid #fff;
+	-webkit-transition: -webkit-transform .15s ease;
+	-moz-transition: -moz-transform .15s ease;
+	-o-transition: -o-transform .15s ease;
+	-ms-transition: -ms-transform .15s ease;
+	transition: transform .15s ease;
+	position: relative;
+	padding: 0px;
   }
+  /* line 46, ../sass/demo.scss */
+  .container .gallery1 a:hover img {
+	-webkit-transform: scale(1.01);
+	-moz-transform: scale(1.01);
+	-o-transform: scale(1.01);
+	-ms-transform: scale(1.01);
+	transform: scale(1.01);
+	z-index: 2000;
+  }
+  /* line 57, ../sass/demo.scss */
+  .big {
+	width: 100%;
+	}
+
 
   .more-info{
 	  text-align: right;
